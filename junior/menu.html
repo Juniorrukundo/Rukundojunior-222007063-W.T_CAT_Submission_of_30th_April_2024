@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <style>
+        /* Styles from previous code remain unchanged */
+        /* Additional styles for the menu display */
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px;
+        }
+        .menu-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .menu-item h3 {
+            margin-top: 0;
+        }
+        .menu-item p {
+            margin-bottom: 0;
+        }
+        .order-link {
+            text-decoration: none;
+            color: #fff;
+        }
+        .order-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .order-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="user dashboard.html" id="home">Home</a></li>
+                <li><a href="#" id="menu">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wallpaper"></div>
+
+    <!-- Menu display -->
+    <div class="menu-container" style="display:true;">
+        <div class="menu-item">
+            <img src="1234.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <p>$10.99</p>
+            <a href="payment.php" class="order-link"><button class="order-button">Order</button></a>
+        </div>
+        <div class="menu-item">
+            <img src="12345.jpg" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>$12.99</p>
+            <a href="payment.php" class="order-link"><button class="order-button">Order</button></a>
+        </div>
+        <div class="menu-item">
+            <img src="111.jpg" alt="Salad">
+            <h3>Salad</h3>
+            <p>$8.99</p>
+            <a href="payment.php" class="order-link"><button class="order-button">Order</button></a>
+        </div>
+        <!-- Add more menu items as needed -->
+    </div>
+
+    <!-- Your content goes here -->
+
+    <script>
+        document.getElementById('home').addEventListener('click', function() {
+            // Handle home button click
+        });
+
+        document.getElementById('menu').addEventListener('click', function() {
+            // Show menu display
+            document.querySelector('.menu-container').style.display = 'grid';
+        });
+
+        // No need to change JavaScript code for order buttons since they are wrapped in anchor tags
+    </script>
+</body>
+</html>

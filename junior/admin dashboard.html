@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .header {
+            background-image: url('44.jpg'); /* Change the URL to your wallpaper image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        h1 {
+            margin: 0;
+            color: #fff;
+        }
+
+        .logout {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .logout:hover {
+            background-color: #0056b3;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            width: 250px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .menu-item a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .menu-item a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Admin Dashboard</h1>
+        <button class="logout" onclick="logout()">Logout</button>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-item">
+                <h2>Manage Orders</h2>
+                <a href="manage orders.php">View Orders</a>
+            </div>
+            <div class="menu-item">
+                <h2>Manage Users</h2>
+                <a href="manage users.php">View Users</a>
+            </div>
+            <div class="menu-item">
+                <h2>Manage Menu</h2>
+                <a href="menu.html">View Menu</a>
+            </div>
+            <!-- Add more menu items as needed -->
+        </div>
+    </div>
+
+    <script>
+        function logout() {
+            // Perform logout operation, such as clearing session or redirecting to logout page
+            console.log('Logout button clicked!');
+            window.location.href = 'home.html'; 
+            // Example: window.location.href = 'home,html';
+        }
+    </script>
+</body>
+</html>
